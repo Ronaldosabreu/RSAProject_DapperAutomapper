@@ -11,16 +11,16 @@ namespace RSAMail_API.Mapper
 {
   public class MapperObjects
   {
-    public void mapper()
+    public MapperConfiguration mapper()
     {
-      var configuration = new MapperConfiguration(
-      cfg => {
-                //cfg.CreateMap<UsuarioInputModel, UsuarioDomain>();
-                cfg.CreateMap<UsuarioDomain, UsuarioOutPut>();
-              });
-
-      var mapper = configuration.CreateMapper();
-
+      MapperConfiguration configuration = new MapperConfiguration(cfg =>
+      {
+        cfg.CreateMap<UsuarioInputModel, UsuarioDomain>();
+        cfg.CreateMap<UsuarioDomain, UsuarioInputModel>();
+        cfg.CreateMap<UsuarioOutPut, UsuarioDomain>();
+        cfg.CreateMap<UsuarioDomain, UsuarioOutPut>();
+      });
+      return configuration;
     }
 
   }

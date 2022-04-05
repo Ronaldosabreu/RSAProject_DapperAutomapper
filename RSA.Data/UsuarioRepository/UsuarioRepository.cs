@@ -21,13 +21,9 @@ namespace RSA.Data
 
     public UsuarioDomain Busca(int id)
     {
-      
-
       string sql = $@"SELECT * FROM USUARIO WHERE IDUSUARIO = @IDUSUARIO";
-
-      UsuarioDomain user = _db.QuerySingle<UsuarioDomain>(sql, new { IDUSUARIO = id });
-
       
+      UsuarioDomain user = _db.QuerySingle<UsuarioDomain>(sql, new { IDUSUARIO = id });
 
       return user;
     }

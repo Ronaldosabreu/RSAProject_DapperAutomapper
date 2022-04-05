@@ -11,6 +11,8 @@ using Microsoft.OpenApi.Models;
 using RSA.Data;
 using RSA_Domain.Usuario;
 using RSAMail_API.InputModels;
+using RSAMail_API.Mapper;
+using RSAMail_API.OutPutModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,21 +39,15 @@ namespace RSAMail_API
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "RSAMail_API", Version = "v1" });
       });
 
-
       //Criando AutoMapper
-      var configuration = new MapperConfiguration(cfg =>
-      {
-        cfg.CreateMap<UsuarioInputModel, UsuarioDomain>();
-        cfg.CreateMap<UsuarioDomain, UsuarioInputModel>();
-
-      });
+      //Using automapper
+      MapperObjects mapperObjct = new MapperObjects();
+      var configurationMapper = mapperObjct.mapper();
+      IMapper mapper = configurationMapper.CreateMapper();
+      services.AddSingleton(mapper);
 
       //Injeção de dependencia 
       services.AddScoped(typeof(IBaseRepository<>), typeof(UsuarioRepository<>));
-
-      //Using automapper
-      IMapper mapper = configuration.CreateMapper();
-      services.AddSingleton(mapper);
 
       //connection string
       services.AddSingleton(this.Configuration.GetConnectionString("MyConn"));
