@@ -20,7 +20,6 @@ C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMa
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\RSA.Data.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\RSA_Domain.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\RSA.Data.pdb
@@ -34,3 +33,5 @@ C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMa
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\obj\Debug\net5.0\ref\RSAMail_API.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\obj\Debug\net5.0\RSAMail_API.pdb
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\obj\Debug\net5.0\RSAMail_API.genruntimeconfig.cache
+C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\Dapper.dll
+C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSAMail_API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

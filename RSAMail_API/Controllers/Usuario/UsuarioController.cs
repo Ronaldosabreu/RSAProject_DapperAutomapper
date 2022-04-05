@@ -4,6 +4,9 @@ using RSAMail_API.InputModels;
 using RSA.Data;
 using RSA_Domain.Usuario;
 using AutoMapper;
+using Dapper;
+using Npgsql;
+using RSAMail_API.OutPutModel;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace RSAMail_API.Controllers.Usuario
@@ -25,25 +28,45 @@ namespace RSAMail_API.Controllers.Usuario
 
     // GET: api/usuario/<UsuarioController>
     [HttpGet]
-    public IEnumerable<string> Get()
+    public IEnumerable<UsuarioOutPut> Get()
     {
-      return new string[] { "value1", "value2" };
+      IEnumerable<UsuarioOutPut> teste;
+
+      using (var connection = new NpgsqlConnection(@"Server=localhost;
+      Port=5432;
+      Database=RSAFidelidade;
+      User Id=postgres;
+      Password=root;"))
+      {
+        
+          teste = connection.Query<UsuarioOutPut>("SELECT * FROM USUARIO");
+      }
+
+      return teste;
     }
 
     // GET api/usuario/<UsuarioController>/5
     [HttpGet("{id}")]
-    public string Get(int id)
+    public UsuarioOutPut Get(int id)
     {
-      return "value";
+
+      UsuarioDomain empDTO = _repository.Busca(id);
+
+      UsuarioOutPut usuarioOutPut = _mapper.Map<UsuarioOutPut>(empDTO);
+
+      return usuarioOutPut;
+
     }
 
     // POST api/usuario/<UsuarioController>
     [HttpPost]
-    public void Post([FromBody] UsuarioInputModel value)
+    public UsuarioDomain Post([FromBody] UsuarioInputModel value)
     {
 
       UsuarioDomain empDTO = _mapper.Map<UsuarioDomain>(value);
       _repository.Cadastrar(empDTO);
+
+      return empDTO;
 
     }
 

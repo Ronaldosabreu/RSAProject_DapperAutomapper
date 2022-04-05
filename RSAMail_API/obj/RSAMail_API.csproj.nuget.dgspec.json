@@ -48,6 +48,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -125,11 +129,15 @@
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[1.15.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

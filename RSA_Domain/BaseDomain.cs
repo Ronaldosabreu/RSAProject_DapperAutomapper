@@ -8,6 +8,6 @@ namespace RSA_Domain
 {
   public class BaseDomain
   {
-    public int Id { get; set; }
+    public int IdUsuario { get; set; }
   }
 }

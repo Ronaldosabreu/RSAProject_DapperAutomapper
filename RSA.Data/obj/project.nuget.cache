@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/C8nDZJF5glU+T6yxaYNXyLUsVx1nyA6qMXdO2xpSph+TOvRirLZojwfHA2Xc3WbQKBKvghP5HkEQ/wC7sz94A==",
+  "dgSpecHash": "tGM+vsPX7nsPHl7MctsDmmn90tc46W5KvFwpFw/qlvdeJMVhorRS6mkWs+6AUK2WyJj0MA3d6HR7CQ7EnMjDMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ronaldo.abreu\\Desktop\\Area de Trabalho 2021\\RSAProject\\RSAProject\\RSA.Data\\RSA.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],

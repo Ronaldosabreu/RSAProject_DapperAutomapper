@@ -2,7 +2,6 @@ C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_D
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\bin\Debug\net5.0\RSA_Domain.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\bin\Debug\net5.0\ref\RSA_Domain.dll
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\bin\Debug\net5.0\RSA_Domain.pdb
-C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\obj\Debug\net5.0\RSA_Domain.csproj.AssemblyReference.cache
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\obj\Debug\net5.0\RSA_Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\obj\Debug\net5.0\RSA_Domain.AssemblyInfoInputs.cache
 C:\Users\ronaldo.abreu\Desktop\Area de Trabalho 2021\RSAProject\RSAProject\RSA_Domain\obj\Debug\net5.0\RSA_Domain.AssemblyInfo.cs

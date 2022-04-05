@@ -1,25 +1,35 @@
-﻿using Npgsql;
+﻿using Dapper;
+using Npgsql;
 using RSA_Domain;
 using RSA_Domain.Usuario;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace RSA.Data
 {
-  public class UsuarioRepository<UsuarioDomain> : IBaseRepository<UsuarioDomain>
+  public class UsuarioRepository<T> : IBaseRepository<UsuarioDomain>
   {
 
-    private IDbConnection _db;
+    private NpgsqlConnection _db;
 
     public UsuarioRepository(string connectionString)
     {
-      //this._db = new NpgsqlConnection(connectionString);
+     _db = new NpgsqlConnection(connectionString);
     }
 
     public UsuarioDomain Busca(int id)
     {
-      throw new NotImplementedException();
+      
+
+      string sql = $@"SELECT * FROM USUARIO WHERE IDUSUARIO = @IDUSUARIO";
+
+      UsuarioDomain user = _db.QuerySingle<UsuarioDomain>(sql, new { IDUSUARIO = id });
+
+      
+
+      return user;
     }
 
     public List<UsuarioDomain> BuscarTodos()
@@ -29,7 +39,23 @@ namespace RSA.Data
 
     public UsuarioDomain Cadastrar(UsuarioDomain entidade)
     {
-      throw new NotImplementedException();
+      var trans = this._db.BeginTransaction();
+
+      string sql = $@"INSERT INTO USUARIO (NOMEUSUARIO, 
+                                          EMAIL, 
+                                          SEXO, 
+                                          RG, 
+                                          CPF, 
+                                          CNPJ, 
+                                          SITUACAOCADASTRO, 
+                                          DATACADASTRO) 
+													VALUES (@NOMEUSUARIO, @EMAIL, @SEXO, @RG, @CPF, @CNPJ, @SITUACAOCADASTRO, '{DateTime.Now}' ) RETURNING IDUSUARIO ;";
+      
+      entidade.IdUsuario = _db.Query<int>(sql, entidade).Single();
+      
+      trans.Commit();
+
+      return entidade;
     }
     public UsuarioDomain Altualizar(UsuarioDomain entidade)
     {

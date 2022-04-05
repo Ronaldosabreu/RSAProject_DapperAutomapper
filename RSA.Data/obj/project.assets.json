@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "Npgsql/6.0.3": {
         "type": "package",
         "dependencies": {
@@ -39,6 +48,24 @@
     }
   },
   "libraries": {
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "Npgsql/6.0.3": {
       "sha512": "yt/3XFRhHsJ01a4+qHM9+0mtitQ3DY2wJLyGP9vtvZa1cB1nSAw762GJGdSX3Bbc7wZKzeo4dc4drD3yvQe7gA==",
       "type": "package",
@@ -95,6 +122,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Dapper >= 2.0.123",
       "Npgsql >= 6.0.3",
       "RSA_Domain >= 1.0.0"
     ]
@@ -147,6 +175,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
           "Npgsql": {
             "target": "Package",
             "version": "[6.0.3, )"

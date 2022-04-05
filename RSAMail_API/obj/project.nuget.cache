@@ -1,19 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "u0g0X9IhGtV+NmerGMblK9jdi/1g3H7ja77OhATI65O1Me8spmFrw8ZwDaeIJl496DJ7jKsknLvtroaoKM532Q==",
+  "dgSpecHash": "bElIBqdmh39dxVpQ8M3BHkAbjx+nfZpkr7PnpSFYM2FP/seyfI9q/aItt7FLPOGtVv2Zc5cC99ZMNASaMEoB4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ronaldo.abreu\\Desktop\\Area de Trabalho 2021\\RSAProject\\RSAProject\\RSAMail_API\\RSAMail_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.0\\microsoft.visualstudio.azure.containers.tools.targets.1.15.0.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
-    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.0\\swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.0\\swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.0\\swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
+    "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.0\\swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512",
     "C:\\Users\\ronaldo.abreu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
