@@ -30,7 +30,11 @@ namespace RSA.Data
 
     public List<UsuarioDomain> BuscarTodos()
     {
-      throw new NotImplementedException();
+      string sql = $@"SELECT * FROM USUARIO";
+
+      List<UsuarioDomain> user = _db.Query<UsuarioDomain>(sql).ToList();
+
+      return user;
     }
 
     public UsuarioDomain Cadastrar(UsuarioDomain entidade)

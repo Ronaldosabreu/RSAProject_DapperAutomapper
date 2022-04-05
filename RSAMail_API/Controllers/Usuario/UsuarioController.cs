@@ -30,19 +30,11 @@ namespace RSAMail_API.Controllers.Usuario
     [HttpGet]
     public IEnumerable<UsuarioOutPut> Get()
     {
-      IEnumerable<UsuarioOutPut> teste;
+      List<UsuarioDomain> empDTO = _repository.BuscarTodos();
 
-      using (var connection = new NpgsqlConnection(@"Server=localhost;
-      Port=5432;
-      Database=RSAFidelidade;
-      User Id=postgres;
-      Password=root;"))
-      {
-        
-          teste = connection.Query<UsuarioOutPut>("SELECT * FROM USUARIO");
-      }
+      List<UsuarioOutPut> usuarioOutPut = _mapper.Map<List<UsuarioOutPut>>(empDTO);
 
-      return teste;
+      return usuarioOutPut;
     }
 
     // GET api/usuario/<UsuarioController>/5
